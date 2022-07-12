@@ -5,7 +5,7 @@
 }
 
 .main {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,9 +23,9 @@
   justify-content: right;
 }
 
-.degradado {
+.historia {
   background: linear-gradient(
-    to bottom,
+    to right,
     #85420e 50%,
     rgba(255, 255, 255, 1) 50%
   );
@@ -98,4 +98,30 @@
 
 .text-white:last-child {
   margin-bottom: 2px;
+}
+
+.card-body {
+  background-color: #85420e;
+  color: white;
+}
+
+.cafe {
+  color: #422019;
+}
+
+.login {
+  background-color: #85420e;
+  height: 350px;
+  color: white;
+  border-radius: 30px;
+}
+
+.bg-cafe {
+  background-color: #422019;
+  border: 2px solid #85420e;
+}
+
+.bg-cafe:hover {
+  background-color: #c58749;
+  border: 2px solid #422019;
 }
