@@ -31,6 +31,14 @@
   );
 }
 
+.degradado {
+  background: linear-gradient(
+    to bottom,
+    #85420e 50%,
+    rgba(255, 255, 255, 1) 50%
+  );
+}
+
 .lista-pasos {
   color: white;
   list-style: none;

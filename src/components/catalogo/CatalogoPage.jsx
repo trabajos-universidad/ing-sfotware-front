@@ -6,7 +6,7 @@ export const CatalogoPage = () => {
     <div className="row mt-5">
       {
         arr.map(item => (
-          <div className="col-12 col-md-6 col-lg-3 mt-3">
+          <div className="col-12 col-md-6 col-lg-3 mt-3" key={item}>
             <div className="card">
               <img src="./imgs/producto.jpg" alt="logo" className="card-img-top" />
               <div className="card-body">

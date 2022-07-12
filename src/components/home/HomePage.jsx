@@ -2,7 +2,7 @@
 export const HomePage = () => {
   return (
     <>
-    <div className="row degradado historia">
+    <div className="row degradado">
       <div className="col-md-6 my-3">
         <h1 className="mt-3 text-white">Como se crea tu pedido?</h1>
         <img src="./imgs/img1.png" className="img-fluid img-inicio" />
