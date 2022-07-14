@@ -29,5 +29,5 @@ este es un trabajo del ramo de ingenería de software en el cual se basa en ayud
 
  ## Link de Prueba
  ```
-    https://gleaming-pothos-bbb330.netlify.app/
+    https://ing-software-work.herokuapp.com/
  ```
