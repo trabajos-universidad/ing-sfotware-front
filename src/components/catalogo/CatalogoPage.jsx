@@ -16,7 +16,6 @@ export const CatalogoPage = () => {
     setProductos(productos);
   }
 
-  console.log(productos);
   return (
     <div className="row mt-5">
       {productos.map(({id, nombre, desc, foto}) => (

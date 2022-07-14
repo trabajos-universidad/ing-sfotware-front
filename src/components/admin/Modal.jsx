@@ -34,10 +34,10 @@ export const Modal = () => {
         desc,
         foto: url
     }
+    reset();
 
     await agregarProducto(producto);
 
-    reset();
 
   };
 

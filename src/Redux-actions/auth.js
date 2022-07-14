@@ -1,4 +1,5 @@
 import { types } from '../types/types';
+import Swal from 'sweetalert2';
 
 export const login = (uid, displayname) => ({
   type: types.login,
@@ -25,8 +26,17 @@ export const startLogin = (email, password) => {
     });
 
     const body = await response.json();
-    if (body.ok) {
-        dispatch(login(body.uid, body.name));
+
+    if (!body.ok) {
+      return Swal.fire({
+        title: 'Error',
+        text: body.msg,
+        icon: 'error',
+        confirmButtonText: 'Ok',
+      });
     }
+
+    localStorage.setItem('token', body.token);
+    dispatch(login(body.uid, body.name));
   };
 };
