@@ -37,6 +37,8 @@ export const Modal = () => {
 
     await agregarProducto(producto);
 
+    reset();
+
   };
 
   return (

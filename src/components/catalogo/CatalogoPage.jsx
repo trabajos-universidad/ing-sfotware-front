@@ -1,16 +1,27 @@
-import { Producto } from "./Producto";
+import { useEffect, useState } from 'react';
+import { pedirProductos } from '../../helpers/pedirProudctos';
+import { Producto } from './Producto';
 
 export const CatalogoPage = () => {
 
-  const arr = [1,2,3,4,5,6,7,8,9,10];
+  const [productos, setProductos] = useState([])
 
+  useEffect(() => {
+   cargarProductos();
+  }, []);
+
+  const cargarProductos = async () => {
+    const productos = await pedirProductos();
+
+    setProductos(productos);
+  }
+
+  console.log(productos);
   return (
     <div className="row mt-5">
-      {
-        arr.map(item => (
-          <Producto key={item} />
-        ))
-      }
+      {productos.map(({id, nombre, desc, foto}) => (
+        <Producto key={id}  nombre={nombre} desc={desc} foto={foto}/>
+      ))}
     </div>
-  )
-}
+  );
+};

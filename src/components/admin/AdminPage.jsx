@@ -17,10 +17,15 @@ export const AdminPage = () => {
           </button>
         </div>
       </div>
-      <Modal/>
+      <Modal />
       <div className="row">
-        {arr.map((item) => (
-          <Producto key={item} />
+        {arr.map(({ id, nombre, foto, desc }) => (
+          <Producto
+            key={id}
+            nombre={nombre}
+            foto={foto}
+            desc={desc}
+          />
         ))}
       </div>
     </div>
