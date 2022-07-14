@@ -5,7 +5,7 @@ export const Producto = ({ id, nombre, foto, desc}) => {
   const { uid } = useSelector((state) => state.auth);
 
   const handleClickDeleteproduct = async() => {
-    const resp = await fetch(`http://localhost:4000/productos/${id}/`, {
+    const resp = await fetch(`https://ing-software-work.herokuapp.com/productos/${id}/`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

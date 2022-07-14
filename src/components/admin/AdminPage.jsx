@@ -43,8 +43,6 @@ export const AdminPage = () => {
           <button
             type="button"
             className="btn btn-danger"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
             onClick={handleLogout}
           >
             Cerrar Sesion

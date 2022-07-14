@@ -13,6 +13,8 @@ export const CatalogoPage = () => {
   const cargarProductos = async () => {
     const data = await pedirProductos();
 
+    console.log(data)
+
     setProductos(data);
   }
 

@@ -1,6 +1,6 @@
 export const pedirProductos = async () => {
     try{
-        const resp = await fetch('http://localhost:4000/productos');
+        const resp = await fetch('https://ing-software-work.herokuapp.com/productos');
 
         if(!resp.ok) throw new Error(resp.msg);
 

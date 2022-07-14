@@ -17,7 +17,7 @@ export const startLogin = (email, password) => {
   const data = { email, password };
 
   return async (dispatch) => {
-    const response = await fetch('http://localhost:4000/auth/', {
+    const response = await fetch('https://ing-software-work.herokuapp.com/auth/', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {

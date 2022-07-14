@@ -3,7 +3,7 @@ import Swal from 'sweetalert2';
 export const agregarProducto = async (producto) => {
   try {
     const resp = await fetch(
-      'http://localhost:4000/productos/crear-productos',
+      'https://ing-software-work.herokuapp.com/productos/crear-productos',
       {
         method: 'POST',
         headers: {

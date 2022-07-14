@@ -13,7 +13,7 @@ export const HomePage = () => {
             <img src="./imgs/madera.jpg" alt="imagen" className="paso-img"/> 
             <div>
               <h3 className="text-white">Paso 1</h3>
-              <p className="text-white"> Primero se toma un tronco de madera el cual cumpla con los estandares de calidad</p>
+              <p className="text-white"> El cliente revisa el catalago para elegir el producto y se contacta con la pyme para encargarselo</p>
             </div>
           </li>
           <li className="paso mt-3">
