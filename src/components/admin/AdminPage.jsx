@@ -5,10 +5,10 @@ import { useEffect } from 'react';
 import { pedirProductos } from './../../helpers/pedirProudctos';
 import { useDispatch } from 'react-redux';
 import { logout } from '../../Redux-actions/auth';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 export const AdminPage = () => {
-  const navigate = useNavigate();
+ const navigate = useNavigate();
   const dispatch = useDispatch();
   const [productos, setProductos] = useState([]);
 
@@ -23,9 +23,9 @@ export const AdminPage = () => {
   }
 
   const handleLogout = () => {
-    dispatch(logout)
+    dispatch(logout())
+    navigate("/home")
     localStorage.removeItem('token');
-    navigate('/home');
   }
 
   return (
