@@ -11,9 +11,9 @@ export const CatalogoPage = () => {
   }, []);
 
   const cargarProductos = async () => {
-    const productos = await pedirProductos();
+    const data = await pedirProductos();
 
-    setProductos(productos);
+    setProductos(data);
   }
 
   return (
