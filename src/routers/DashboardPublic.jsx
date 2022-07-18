@@ -11,7 +11,7 @@ export const DashboardPublic = () => {
       <Navbar />
       <div className="container mt-3">
         <Routes>
-          <Route path="home" element={<HomePage />} />
+          <Route path="" element={<HomePage />} />
           <Route path="historia" element={<HistoriaPage />} />
           <Route path="catalogo" element={<CatalogoPage />} />
           <Route path="login" element={<LoginPage />} />

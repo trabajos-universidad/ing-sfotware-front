@@ -14,7 +14,7 @@ export const Footer = () => {
         <div className="col line">
           <p className="text-white icons">
             <a href="https://www.instagram.com/artymad.pyme/" target="_blank" className="fa-brands fa-instagram size mt-1 mx-3"></a>
-            <a className="fa-brands fa-whatsapp size mt-1 mx-3"></a>
+            <a className="fa-brands fa-whatsapp size mt-1 mx-3" target="_blank" href="http://wa.me/+56961902898"></a>
           </p>
         </div>
         <div className="row">

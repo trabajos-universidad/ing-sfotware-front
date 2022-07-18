@@ -18,13 +18,13 @@ export const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="navbar-item ">
-              <NavLink to="/home" className="nav-link">
+              <NavLink to="/" className="nav-link">
                 Inicio
               </NavLink>
             </li>
             <li className="navbar-item ">
               <NavLink to="/catalogo" className="nav-link">
-                Catalgo
+                Catalogo
               </NavLink>
             </li>
             <li className="navbar-item ">
