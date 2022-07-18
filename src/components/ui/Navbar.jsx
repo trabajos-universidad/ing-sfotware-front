@@ -3,7 +3,9 @@ export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg line">
       <div className="container-fluid">
-            <img src="./imgs/logo.png" alt="logo" width='120px' />
+        <NavLink to="/">
+          <img src="./imgs/logo.png" alt="logo" width='120px' />
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
