@@ -24,7 +24,7 @@ export const AdminPage = () => {
 
   const handleLogout = () => {
     dispatch(logout())
-    navigate("/home")
+    navigate("/")
     localStorage.removeItem('token');
   }
 
