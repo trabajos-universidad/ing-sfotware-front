@@ -134,3 +134,7 @@
   background-color: #c58749;
   border: 2px solid #422019;
 }
+
+.text-justify {
+  text-align: justify;
+}

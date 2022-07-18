@@ -6,7 +6,7 @@ export const HistoriaPage = () => {
       </div>
       <div className="col-md-6">
         <h1 className="cafe">Historia</h1>
-        <p>
+        <p className="text-justify">
           La empresa ArtyMad durante la pandemia la pareja de
           Katherine trabajaba en una área en la cual se
           desperdiciaba grandes cantidades de madera, hasta que
